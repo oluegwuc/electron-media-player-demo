@@ -1,0 +1,27 @@
+.container {
+    padding: 20px;
+
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+.info-container {
+    display: flex;
+    padding: 30px;
+
+}
+
+.info {
+    flex: 1;
+    padding: 20px;
+}
+
+button,
+a,
+.close-btn {
+    -webkit-app-region: none;
+
+}

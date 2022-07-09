@@ -1,0 +1,25 @@
+{
+  "name": "Oca-Media-Player",
+  "version": "1.0.0",
+  "description": "A simple media player  for audio and video",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . Media-Player --win32 --asar --arch=ia32  --prune=true --icon=\"images/icon.ico\""
+  },
+  "keywords": [
+    "Media Player"
+  ],
+  "author": "Oluegwu Chigozie",
+  "license": "ISC",
+  "dependencies": {
+    "@electron/remote": "^2.0.1",
+    "electron-is-dev": "^2.0.0",
+    "ffmetadata": "^1.7.0",
+    "fluent-ffmpeg": "^2.1.2"
+  },
+  "devDependencies": {
+    "electron": "^12.0.2",
+    "electron-packager": "^15.2.0"
+  }
+}

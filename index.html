@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCA Media Player</title>
+    <link rel="stylesheet" href="fontawsome6/pro/css/all.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="title-bar">
+            <div class="logo">Oca<span>WebTech</span></div>
+            <div class="title"></div>
+            <div class="window-size">
+                <button title="Minimize" class=" window-size-btn minimize-btn"><i
+                        class="fa-regular fa-window-minimize"></i></button>
+                <button title="Maximize" class=" window-size-btn restore-btn"><i
+                        class="fa-regular fa-window-maximize"></i></button>
+                <button title="Close" class=" window-size-btn close-btn"><i class="fa-regular fa-xmark"></i></button>
+            </div>
+        </div>
+        <div class="menu-bar">
+            <div class="menu-items">
+                <button class="open-menu-btn">File</button>
+                <button class="btn list-btn">Play list</button>
+            </div>
+
+        </div>
+    </header>
+    <!-- Media List -->
+    <div class="media-list">
+
+    </div>
+
+    <div class="container">
+        <button class="btn last-btn">Continue From Last</button>
+        <div class="media-info-container hide drop-zone">
+            <img src="images/audio.jpeg" class="banner">
+            <div class="disc">
+                <img class="media-image" src="./images/cd.png" alt="" width="200">
+            </div>
+            <div class="media-info"></div>
+
+        </div>
+
+        <div class="logo-title drop-zone">
+            <h1>OCA<span>MEDIA</span></h1>
+        </div>
+
+
+        <video class="video drop-zone"></video>
+    </div>
+
+    <div class="footer">
+        <div class="progress-container">
+            <div class="current-time">00:00:00</div>
+            <div class="progress-bar-container">
+                <span id="hover-timer" class="hover-timer"></span>
+                <div class="progress"></div>
+            </div>
+            <div class="duration">00:00:00</div>
+        </div>
+        <div class="controls-container">
+            <div class="control-btns">
+                <button title="Play" class="control-btn play-pause-btn"><i class="fa-solid fa-play"></i></button>
+                <button title="Previous" class="control-btn prev-btn"><i class="fa-solid fa-backward-fast"></i></button>
+                <button title="Stop" class="control-btn stop-btn"><i class="fa-solid fa-stop"></i></button>
+                <button title="Next" class="control-btn next-btn"><i class="fa-solid fa-forward-fast"></i></button>
+                <button title="Toggle Fullscreen" class="control-btn toggle-fullscreen-btn"><i
+                        class="fa-solid fa-expand-wide"></i></button>
+                <button title="Toggle Repeat" class="control-btn toggle-repeat-btn"><i
+                        class="fa-solid fa-repeat"></i></button>
+
+            </div>
+            <div class="volume">
+                <span class="volume-percent">20%</span>
+                <input type="range" class="volume-bar" min="0" max="1" step="0.01" value="0.2">
+            </div>
+        </div>
+    </div>
+    <script defer src="js/index.js"></script>
+    <script defer src="js/video.js"></script>
+</body>
+
+</html>
